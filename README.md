@@ -115,13 +115,12 @@ The analysis includes:
 - Weaknesses
 - Suggestions
 
-## Future Improvements
+## Visual Demo
+<img width="1697" height="1015" alt="image" src="https://github.com/user-attachments/assets/f49d1ba5-d600-4a24-aa00-e9874c33afe5" />
+<img width="1704" height="981" alt="image" src="https://github.com/user-attachments/assets/e0449102-5339-41ba-9eca-0c4e3dbe0444" />
+<img width="756" height="790" alt="image" src="https://github.com/user-attachments/assets/8ae46866-09d8-4e60-8e1a-08d4c695befe" />
+<img width="687" height="475" alt="image" src="https://github.com/user-attachments/assets/3cf293e0-bb0d-4f35-826a-1641043c3ecb" />
 
-- Resume history
-- User authentication
-- Export analysis as PDF
-- Resume rewriting suggestions
-- Support for DOCX files
 
 ## Author
 
