@@ -4,7 +4,7 @@ Resume AI is a full-stack web application that analyzes a resume against a job d
 
 ## About the Project
 
-I built this project to learn how to integrate large language models into a full-stack web application. The goal was to create a tool that gives resume feedback tailored to a specific job description rather than providing only general suggestions. Through this project, I learned how to connect a React frontend with a FastAPI backend, process PDF files, integrate the Gemini API, containerize applications with Docker, and orchestrate multiple services using Docker Compose.
+I built this project to learn how to integrate large language models into a full-stack web application. The goal was to create a tool that gives resume feedback tailored to a specific job description rather than providing only general suggestions. Through this project, I learned how to connect a React frontend with a FastAPI backend, process PDF files, integrate the Gemini API, containerize applications with Docker, orchestrate multiple services using Docker Compose, and deploy a full-stack application on an AWS EC2 instance.
 
 ## Features
 
@@ -16,7 +16,8 @@ I built this project to learn how to integrate large language models into a full
 - Get strengths, weaknesses, and improvement suggestions
 - AI-powered analysis using Google Gemini
 - Dockerized frontend and backend using Docker Compose
-
+- Deployed on AWS EC2 using an Ubuntu Server instance
+  
 ## Tech Stack
 
 ### Frontend
@@ -31,10 +32,43 @@ I built this project to learn how to integrate large language models into a full
 - Google Gemini API
 - PyPDF
 
-### DevOps
+### Cloud and DevOps
+- AWS EC2
+- Ubuntu Server 24.04 LTS
 - Docker
 - Docker Compose
+- Git and GitHub
 
+## AWS Deployment
+
+The application was deployed on an AWS EC2 instance running Ubuntu Server 24.04 LTS. The frontend and backend were containerized separately and orchestrated using Docker Compose.
+
+The deployment process included:
+
+- Launching and configuring an AWS EC2 instance
+- Connecting securely to the instance using SSH
+- Installing Docker and Docker Compose on Ubuntu Server
+- Cloning the application from GitHub
+- Configuring environment variables securely on the server
+- Building and running the React and FastAPI containers using Docker Compose
+- Configuring EC2 security group rules for frontend and backend access
+- Configuring CORS to enable communication between the deployed frontend and backend
+
+### Deployment Architecture
+
+```text
+User Browser
+      |
+      v
+React Frontend
+AWS EC2 — Port 5173
+      |
+      v
+FastAPI Backend
+AWS EC2 — Port 8000
+      |
+      v
+Google Gemini API
 ## Running the Application with Docker
 
 ### Clone the repository
@@ -117,6 +151,7 @@ The analysis includes:
 <img width="756" height="790" alt="image" src="https://github.com/user-attachments/assets/8ae46866-09d8-4e60-8e1a-08d4c695befe" />
 
 <img width="687" height="475" alt="image" src="https://github.com/user-attachments/assets/3cf293e0-bb0d-4f35-826a-1641043c3ecb" />
+
 
 ## Author
 
